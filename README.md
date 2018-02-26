@@ -1,15 +1,2 @@
-# BA_Vorlage
-Vorlage für die Bachelor-Arbeit
-
-## Anleitung Putzdienst
-
-you can set this code as usercommand in texstudio but it will only clear the folder in which the file is located.
-Or just run it with powershell.
-
-
- powershell "& ""C:/pfad/putzdienst.ps1"" "
-
-
-for bibtex compile write a new command:
-Options->Configure Texstudio->Build->UserCommands->add  
-txs:///view-pdf | txs:///pdflatex | txs:///bibtex | txs:///pdflatex | txs:///pdflatex 
+# Vorlage Technischer Bericht
+Das Dokument wurde auf der Basis einer Vorlage für Technische Berichte erstellt. Die Vorlage ist ein Element des „Werkzeugkastens Technische Berichte“ der Hochschule für Technik Rapperswil. Sie orientiert sich an Prinzipien des Strukturierten Schreibens.
