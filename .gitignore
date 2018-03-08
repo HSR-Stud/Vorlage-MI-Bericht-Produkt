@@ -50,3 +50,5 @@ _ReSharper*/
 *.ptc
 *.tdo
 *.equ
+!sections/anhang/*.pdf
+*.pdf
