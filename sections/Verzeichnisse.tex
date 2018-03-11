@@ -1,35 +1,51 @@
 \section{Verzeichnisse}
-%Abkürzungsverzeichniss, für schön ausrichten längste Abkürzung in eckige Klammer
+%Abkürzungsverzeichniss, für schön ausrichten längste Abkürzung in [eckige Klammer]
 \subsection{Abkürzungen}
 \vspace{0.1cm}
-\begin{acronym}[BA]
+\begin{acronym}[BABA]
 %\acro{Abkürzung}{Ausdruck ausgeschrieben}	
 \acro{HSR}{Hochschule für Technik Rapperswil}
 \end{acronym}	
-\clearpage
-\pagebreak
+%\clearpage
+%\pagebreak
+\vspace{1cm}
 
 
 %Gleichungsverzeichnis
 \subsection{\listequationsname}
+\vspace{-1cm}
 \renewcommand*\listequationsname{}
-\listofmyequations\thispagestyle{fancy}
-\clearpage
-\pagebreak
+%\null\hspace{-0.7cm}
+%\begin{minipage}{17.7cm}
+    \listofmyequations\thispagestyle{fancy}
+%\end{minipage}
+%\clearpage
+%\pagebreak
+\vspace{1cm}
 
 %Abbildungsverzeichnis
 \subsection{\listfigurename}
+\vspace{-1cm}
 \renewcommand*\listfigurename{}
-\listoffigures\thispagestyle{fancy}
-\clearpage
-\pagebreak
+\null\hspace{-0.7cm}
+\begin{minipage}{17.7cm}
+    \listoffigures\thispagestyle{fancy}
+\end{minipage}
+%\clearpage
+%\pagebreak
+\vspace{1cm}
 
 %Tabellenverzeichnis
 \subsection{\listtablename}
+\vspace{-1cm}
 \renewcommand*\listtablename{}
-\listoftables\thispagestyle{fancy}
-\clearpage
-\pagebreak
+\null\hspace{-0.7cm}
+\begin{minipage}{17.7cm}
+    \listoftables\thispagestyle{fancy}
+\end{minipage}
+%\clearpage
+%\pagebreak
+\vspace{1cm}
 
 %Quellenverzeichnis
 \subsection{Quellenverzeichnis}

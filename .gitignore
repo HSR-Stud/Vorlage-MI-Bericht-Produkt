@@ -2,7 +2,6 @@
 *.txss
 *.out
 *.aux
-BA.pdf
 *.synctex*
 *.bcf
 *.idx

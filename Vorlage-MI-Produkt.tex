@@ -34,7 +34,6 @@ a4paper]{article}
 \include{header/codelayout}
 \setcounter{secnumdepth}{4}
 
-\usepackage{lipsum} %for example
 % tcolorbox setup
 \tcbset{width=(\linewidth-1mm)/2,before=,after=\hfill,arc=0mm,
 	colframe=red!50!black,colback=white,colback = red!10}
@@ -71,7 +70,8 @@ a4paper]{article}
 
 \newgeometry{left=2cm,right=2cm,top=1cm,bottom=1cm,headsep=1.5cm, marginparwidth=1mm,marginparsep=3mm,includeheadfoot} %Seitenränder Dokument ohne Titelblatt und Abstract
     \input{sections/Anderungsnachweis}
-    \cleardoublepage
+%    \cleardoublepage
+    \vspace{1cm}
 	\begin{spacing}{1}
 		\startcontents[sections]
 		\printcontents[sections]{l}{1}{\setcounter{tocdepth}{4}\section*{Inhaltsverzeichnis}}	
