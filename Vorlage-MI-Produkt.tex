@@ -1,5 +1,6 @@
 % Dokumentinformationen
-%Vorlage erstellt von Luca Mazzoleni aufbaudend auf der Vorlage von Stefan Reinli
+% Vorlage erstellt von Luca Mazzoleni aufbaudend auf der Vorlage von Stefan Reinli.
+% https://github.com/HSR-Stud/Vorlage-MI-Bericht-Produkt
 
 % !TeX program = pdflatex
 % !TeX encoding = utf8
@@ -13,7 +14,7 @@ twoside,
 a4paper]{article}
 %%%%
 
-% Document information
+% Document information ===============================================
 \newcommand*{\Title}            {Hier k\"ommt der\\ Titel der Arbeit}
 \newcommand*{\TitleInfo}        {Untertitel FS 2017}
 \newcommand*{\AuthorOne}		{Hans Muster1}
@@ -31,9 +32,11 @@ a4paper]{article}
 \newcommand*{\LogoCompany}      {\includegraphics[height = 1cm]{header/logo}}
 \newcommand*{\Print}            {false} % true for black links (print version), false for color links (pdf version)
 
-% Header
+%==== Header ====
 \include{header/header}
-\include{header/codelayout}
+%\include{header/codelayout}   %Einkommentieren wenn Layouts für Codes gebraucht werden.
+%================
+
 \setcounter{secnumdepth}{4}
 
 % tcolorbox setup
@@ -49,15 +52,17 @@ a4paper]{article}
 % fontstyle
 %\renewcommand\familydefault{\sfdefault}    % Arial
 
-% Document
+% Document ================================================================
+%==========================================================================
 \begin{document}
     \pagenumbering{Roman}
 	\thispagestyle{empty}
 	\input{sections/titlepage}
+    %TODO evt. verschiednen Titlepages einfügen?
 	\clearpage
 	\pagebreak
 	\thispagestyle{empty}
-	\listoftodos
+	\listoftodos               %In der finalen Version auskommentieren.
 	\cleardoublepage
     \pagebreak
     \pagenumbering{arabic}
@@ -110,5 +115,5 @@ a4paper]{article}
 	\pagebreak
 	\pagestyle{appendix}
 	\input{sections/Anhang}
-	\pagebreak
+	\cleardoublepage
 \end{document}
