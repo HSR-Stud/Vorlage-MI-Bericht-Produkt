@@ -3,4 +3,4 @@ Das Dokument wurde auf der Basis einer Vorlage für Technische Berichte erstellt
 
 ## Vorschau
 
-[Download Vorschau Technischer Bericht](https://github.com/HSR-Stud/Vorlage-MI-Bericht-Produkt/releases/download/V1.0/Vorlage-MI-Produkt.pdf)
+[Download Vorschau Technischer Bericht](https://github.com/HSR-Stud/Vorlage-MI-Bericht-Produkt/releases/download/V1.1/Vorlage-MI-Produkt.pdf)
