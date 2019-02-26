@@ -45,6 +45,10 @@ a4paper]{article}
 %\include{header/codelayout}   %Einkommentieren wenn Layouts für Codes gebraucht werden.
 %================
 
+%\includeonly{   sections/bsp,
+%                sections/Einleitung
+%            }
+               
 \setcounter{secnumdepth}{4}
 
 % tcolorbox setup
@@ -70,26 +74,25 @@ a4paper]{article}
 %==========================================================================
 \begin{document}
     \pagenumbering{Roman}
-	\thispagestyle{empty}
-	\input{sections/titlepage}
-    %TODO evt. verschiednen Titlepages einfügen?
-	\clearpage
-	\pagebreak
-	\thispagestyle{empty}
-	\listoftodos               %In der finalen Version auskommentieren.
-	\cleardoublepage
-    \pagebreak
+    \thispagestyle{empty}
+    \include{sections/titlepage}
+    \clearpage \pagebreak
+    \thispagestyle{empty}
+    \listoftodos %In der finalen Version auskommentieren.
+    \cleardoublepage \pagebreak
     \pagenumbering{arabic}
     \setcounter{page}{1}
     \thispagestyle{empty}
+    
 	
-\newgeometry{left=4cm,right=2cm,top=1cm,bottom=1cm,headsep=1.5cm, marginparwidth=30mm,marginparsep=3mm,includeheadfoot,reversemarginpar,bindingoffset=2mm}
+\newgeometry{left=4.5cm,right=1.5cm,top=1cm,bottom=1cm,headsep=1.5cm, marginparwidth=30mm,marginparsep=3mm,includeheadfoot,reversemarginpar,bindingoffset=0mm}
+\savegeometry{margin}
 	\thispagestyle{empty}
-	\input{sections/Abstract}
-	\clearpage
-	\pagebreak
+	\include{sections/Abstract} 
 
-\newgeometry{left=2cm,right=2cm,top=1cm,bottom=1cm,headsep=1.5cm, marginparwidth=1mm,marginparsep=3mm,includeheadfoot} %Seitenränder Dokument ohne Titelblatt und Abstract
+
+\newgeometry{left=2.5cm,right=1.5cm,top=1cm,bottom=1cm,headsep=1.5cm, marginparwidth=0mm,marginparsep=0mm,includeheadfoot,reversemarginpar,bindingoffset=0mm} %Seitenränder Dokument ohne Titelblatt und Abstract
+\savegeometry{no-margin}
     \input{sections/Anderungsnachweis}
 %    \cleardoublepage
     \vspace{1cm}
@@ -100,34 +103,21 @@ a4paper]{article}
 	\cleardoublepage 
 	
 
+\loadgeometry{margin}
+	\include{sections/Aufgabenstellung}
+%    \cleardoublepage
+	\include{sections/bsp}
+    \include{sections/Einleitung}
+    \include{sections/KlarenAufgabenstellung}
+    \include{sections/Konzipieren}
+    \include{sections/Entwerfen}
+    \include{sections/Ausarbeiten}
+    \include{sections/Schlussfolgerung}
 
-\newgeometry{left=4cm,right=2cm,top=1cm,bottom=1cm,headsep=1.5cm, marginparwidth=30mm,marginparsep=3mm,includeheadfoot,reversemarginpar,bindingoffset=2mm}
-	\pagebreak
-	\input{sections/Aufgabenstellung}
-    \cleardoublepage
-	\pagebreak
-	\input{sections/bsp}
-	\clearpage
-    \input{sections/Einleitung}
-    \clearpage
-    \input{sections/KlarenAufgabenstellung}
-    \clearpage
-    \input{sections/Konzipieren}
-    \clearpage
-    \input{sections/Entwerfen}
-    \clearpage
-    \input{sections/Ausarbeiten}
-	\clearpage
-    \input{sections/Schlussfolgerung}
-    \clearpage
-
-\newgeometry{left=2cm,right=2cm,top=1cm,bottom=1cm,headsep=1.5cm, marginparwidth=1mm,marginparsep=3mm,includeheadfoot}	
-	\input{sections/Eigenstaendigkeitserklaerung}
-	\pagebreak
-	\input{sections/Verzeichnisse}
-	\clearpage
-	\pagebreak
+\loadgeometry{no-margin}	
+	\include{sections/Eigenstaendigkeitserklaerung}
+	\include{sections/Verzeichnisse}
 	\pagestyle{appendix}
-	\input{sections/Anhang}
+	\include{sections/Anhang}
 	\cleardoublepage
 \end{document}
